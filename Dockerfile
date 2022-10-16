@@ -1,4 +1,5 @@
-FROM alpine:3.11
+# FROM alpine:3.11
+FROM httpd:alpine3.16
 
 COPY . trojan
 RUN apk add --no-cache --virtual .build-deps \
